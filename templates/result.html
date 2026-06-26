@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Scan Result</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<style>
+
+.result-box{
+width:80%;
+max-width:900px;
+margin:60px auto;
+background:#101827;
+padding:40px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(0,229,255,.3);
+}
+
+.result-box h1{
+color:#00e5ff;
+margin-bottom:20px;
+}
+
+.result-box h2{
+margin:20px 0;
+}
+
+.result-box ul{
+margin-top:20px;
+padding-left:25px;
+}
+
+.result-box li{
+margin:10px 0;
+font-size:18px;
+}
+
+.back-btn{
+margin-top:30px;
+}
+
+.back-btn a{
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+🛡 CyberShield
+</div>
+
+<ul>
+
+<li><a href="/">Home</a></li>
+<li><a href="/scanner">Scanner</a></li>
+<li><a href="/dashboard">Dashboard</a></li>
+<li><a href="/tips">Tips</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/developer">Developer</a></li>
+<li><a href="/contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<div class="result-box">
+
+<h1>Scan Result</h1>
+
+<p><strong>URL:</strong> {{ url }}</p>
+
+<h2>{{ status }}</h2>
+
+<h2>Risk Score : {{ risk }}%</h2>
+
+<h3>Detection Reasons</h3>
+
+<ul>
+
+{% for reason in reasons %}
+
+<li>{{ reason }}</li>
+
+{% endfor %}
+
+</ul>
+
+<div class="back-btn">
+
+<a href="/scanner">
+
+<button class="btn">
+
+Scan Another URL
+
+</button>
+
+</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

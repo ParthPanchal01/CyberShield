@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CyberShield | Scanner</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+🛡 CyberShield
+</div>
+
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/scanner">Scanner</a></li>
+<li><a href="/dashboard">Dashboard</a></li>
+<li><a href="/tips">Tips</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/developer">Developer</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>🔍 URL Scanner</h1>
+
+<p>
+Enter any website URL to analyze its phishing risk.
+</p>
+
+<form action="/scan" method="POST">
+
+<div class="scanner">
+
+<input
+type="text"
+name="url"
+placeholder="https://example.com"
+required>
+
+<button class="btn" type="submit">
+
+Analyze URL
+
+</button>
+
+</div>
+
+</form>
+
+</section>
+
+</body>
+
+</html>

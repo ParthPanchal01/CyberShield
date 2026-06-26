@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Developer | CyberShield</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<style>
+
+.profile{
+width:80%;
+max-width:900px;
+margin:60px auto;
+background:#0d00ff;
+padding:40px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 0 20px rgb(0, 225, 255);
+}
+
+.profile img{
+width:180px;
+height:180px;
+border-radius:50%;
+border:5px solid #00e5ff;
+object-fit:cover;
+margin-bottom:20px;
+}
+
+.profile h1{
+color:#00e5ff;
+margin-bottom:10px;
+}
+
+.profile p{
+font-size:18px;
+margin:10px 0;
+}
+
+.info{
+margin-top:30px;
+text-align:left;
+}
+
+.info table{
+width:100%;
+border-collapse:collapse;
+}
+
+.info td{
+padding:12px;
+border-bottom:1px solid #2b3445;
+font-size:18px;
+}
+
+.info td:first-child{
+font-weight:bold;
+color:#00e5ff;
+width:200px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">🛡 CyberShield</div>
+
+<ul>
+
+<li><a href="/">Home</a></li>
+<li><a href="/scanner">Scanner</a></li>
+<li><a href="/dashboard">Dashboard</a></li>
+<li><a href="/tips">Tips</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/developer">Developer</a></li>
+<li><a href="/contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<div class="profile">
+
+<img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Developer">
+
+<h1>PANCHAL PARTH J</h1>
+
+<p>Cyber Security Intern & Python Developer</p>
+
+<div class="info">
+
+<table>
+
+<tr>
+<td>Email</td>
+<td>panchalparth8780@gmail.com</td>
+</tr>
+
+<tr>
+<td>Phone</td>
+<td>+91 8780600573</td>
+</tr>
+
+<tr>
+<td>College</td>
+<td>Government Polytechnic Gandhinagar</td>
+</tr>
+
+<tr>
+<td>Course</td>
+<td>Diploma in Information Technology</td>
+</tr>
+
+<tr>
+<td>City</td>
+<td>Vijapur,Mahesana</td>
+</tr>
+
+<tr>
+<td>Skills</td>
+<td>Python, Flask, HTML, CSS, JavaScript, Cyber Security</td>
+</tr>
+
+<tr>
+<td>GitHub</td>
+<td>https://github.com/ParthPanchal01</td>
+</tr>
+
+<tr>
+<td>LinkedIn</td>
+<td>https://www.linkedin.com/in/parth-gpg-it-det?utm_source=share_via&utm_content=profile&utm_medium=member_android</td>
+</tr>
+
+</table>
+
+</div>
+
+<br>
+
+<p>
+Passionate about Cyber Security, Web Development, and Ethical Hacking. This project was developed as part of my Cyber Security Internship to help users identify phishing websites using rule-based detection techniques.
+</p>
+
+</div>
+
+</body>
+</html>
